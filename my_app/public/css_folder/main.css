@@ -1,0 +1,397 @@
+
+
+
+:root {
+    --main-bg-color: #009d63;
+    --main-text-color: #009d63;
+    --second-text-color: #bbbec5;
+    --second-bg-color: #c1efde;
+  }
+  
+body{
+  background: linear-gradient(60deg,#012949,#024376);
+}
+ 
+
+  
+.primary-text {
+    color: var(--main-text-color);
+  }
+  
+  .second-text {
+    color: var(--second-text-color);
+  }
+  
+  .primary-bg {
+    background-color: var(--main-bg-color);
+  }
+  
+  .secondary-bg {
+    background-color: var(--second-bg-color);
+  }
+  
+  .rounded-full {
+    border-radius: 100%;
+  }
+/* body{
+    background-color: #171717;
+} */
+
+.container-fluid h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+}
+
+.container-fluid .row .col-lg-4 .card  .card-body .input-group .input-group-prepend .input-group-text{
+ background-color: #035CA3;
+ color: #088FFA;
+ border-radius: 0%;
+}
+
+.container-fluid .row .col-lg-4 .card  {
+    opacity: 0.9;
+    border-radius: 0%;
+}
+.container-fluid .row .col-lg-4 .card  .card-body  input:focus {
+    border: 1px solid #035CA3;
+    outline: none;
+}
+
+.container-fluid .row .col-lg-4 .card  .card-body  input{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+}
+
+
+
+
+
+#wrapper {
+    overflow-x: hidden;
+    background-color: #36454F;
+  }
+  
+  #sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -15rem;
+    -webkit-transition: margin 0.25s ease-out;
+    -moz-transition: margin 0.25s ease-out;
+    -o-transition: margin 0.25s ease-out;
+    transition: margin 0.25s ease-out;
+  }
+  
+  #sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+ 
+    font-family: 'Roboto',sans-serif;
+    
+  }
+  
+  #sidebar-wrapper .list-group {
+    width: 15rem;
+    
+  }
+  
+  #page-content-wrapper {
+    min-width: 100vw;
+    
+   
+  }
+
+  #page-content-wrapper .navbar{
+    background: linear-gradient(60deg,#012949,#024376);
+    color: white;
+  }
+
+  #page-content-wrapper .navbar .navbar-nav .nav-item .nav-link{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+  }
+ 
+ 
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+  }
+  
+  #menu-toggle {
+    cursor: pointer;
+    color: white;
+    width: 45px;
+    height: 45px;
+    background-color: #088FFA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    font-size: 20px;
+    box-shadow: 1px 1px 1px 1px #035CA3;
+  }
+  
+  
+  .list-group-item {
+    border: none;
+    padding: 20px 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: white;
+    background: linear-gradient(60deg,#012949,#024376);
+  }
+  .list-group-item:hover{
+    color: white;
+    background-color: #088FFA;
+  }
+  .list-group-item ion-icon {
+    font-size: 20px;
+  }
+  
+
+  #sidebar-wrapper{
+    background: linear-gradient(60deg,#012949,#024376);
+  }
+  .list-group-item.active {
+    border: none;
+   
+  }
+  
+  @media (min-width: 768px) {
+    #sidebar-wrapper {
+      margin-left: 0;
+    }
+  
+    #page-content-wrapper {
+      min-width: 0;
+      width: 100%;
+    }
+  
+    #wrapper.toggled #sidebar-wrapper {
+      margin-left: -15rem;
+    }
+  }
+
+
+
+
+
+
+
+  
+
+
+
+  html *{
+    -webkit-font-smoothing: antialiased;
+}
+h3{
+    font-size: 25px !important;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    line-height: 1.4em !important;
+}
+
+p {
+    font-size: 14px;
+    margin: 0 0 10px !important;
+    font-weight: 300;
+} 
+
+ small {
+    font-size: 75%;
+    color: #777;
+    font-weight: 400;
+}
+
+.container .title{
+    color: #3c4858;
+    text-decoration: none;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    min-height: 32px;
+}
+
+.container .title h3{
+    font-size: 25px;
+    font-weight: 300;
+}
+
+div.card {
+    border: 0;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border-radius: 6px;
+    color: rgba(0,0,0,.87);
+    background: #fff;
+    width: 100%;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+div.card.card-plain {
+    background: transparent;
+    box-shadow: none;
+}
+div.card .card-header {
+    border-radius: 3px;
+    padding: 1rem 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: -30px;
+    border: 0;
+    background: linear-gradient(60deg,#eee,#bdbdbd);
+}
+
+.card-plain .card-header:not(.card-avatar) {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.div.card .card-body{
+    padding: 15px 30px;
+}
+
+
+div.card .card-header-danger {
+    background: linear-gradient(60deg,#012949,#024376);
+    box-shadow: 0 5px 20px 0 rgba(0,0,0,.2), 0 13px 24px -11px rgba(244,67,54,.6);
+}
+
+
+.card-nav-tabs .card-header {
+    margin-top: -30px!important;
+}
+
+.card .card-header .nav-tabs {
+    padding: 0;
+}
+
+.nav-tabs {
+    border: 0;
+    border-radius: 3px;
+    padding: 0 15px;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.nav-tabs .nav-item {
+    margin-bottom: -1px;
+}
+
+.nav-tabs .nav-item .nav-link.active {
+    background-color: hsla(0,0%,100%,.2);
+    transition: background-color .3s .2s;
+}
+
+.nav-tabs .nav-item .nav-link{
+    border: 0!important;
+    color: #fff!important;
+    font-weight: 500;
+}
+
+.nav-tabs .nav-item .nav-link {
+    color: #fff;
+    border: 0;
+    margin: 0;
+    border-radius: 3px;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 10px 15px;
+    background-color: transparent;
+    transition: background-color .3s 0s;
+}
+
+.nav-link{
+    display: block;
+}
+
+
+
+.tab-pane .table thead>tr {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.project-tab {
+  padding: 10%;
+  margin-top: -8%;
+}
+.project-tab #tabs{
+  background: #007b5e;
+  color: #eee;
+}
+.project-tab #tabs h6.section-title{
+  color: #eee;
+}
+.project-tab #tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  color: #0062cc;
+  background-color: transparent;
+  border-color: transparent transparent #f3f3f3;
+  border-bottom: 3px solid !important;
+  font-size: 16px;
+  font-weight: bold;
+}
+.project-tab .nav-link {
+  border: 1px solid transparent;
+  border-top-left-radius: .25rem;
+  border-top-right-radius: .25rem;
+  color: #0062cc;
+  font-size: 16px;
+  font-weight: 600;
+}
+.project-tab .nav-link:hover {
+  border: none;
+}
+.project-tab thead{
+  background: #f3f3f3;
+  color: #333;
+}
+.project-tab a{
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+}
